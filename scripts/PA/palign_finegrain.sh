@@ -1,18 +1,17 @@
 #!/bin/bash
+
 #cd ../..
 
 # custom config
-DATA='/root/autodl-tmp/dataset/tta_data' 
+DATA='/root/autodl-tmp/dataset/tta_data'
 TRAINER=PromptAlign
-# imagenet/imagenet_a/imagenet_r/imagenet_sketch/imagenetv2
-# caltech101/dtd/eurosat/fgvc_aircraft/food101/oxford_flowers/oxford_pets/stanford_cars/sun397/ucf101
-DATASET=imagenet # 往yaml走
-SEED=1
-CUSTOM_NAME=$1
 
+DATASET=$1
+SEED=$2
+CUSTOM_NAME=$3
 WEIGHTSPATH='/root/autodl-tmp/pretrained/MaPLe/cross-domain-datasets/imagenet'
 
-CFG=DG_PAlign_vit_b16_c2_ep5_batch4_2ctx_cross_datasets
+CFG=finegrain_PAlign_vit_b16_c2_ep5_batch4_2ctx_cross_datasets
 SHOTS=16
 LOADEP=2
 
