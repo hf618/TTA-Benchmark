@@ -14,15 +14,15 @@ load_pre_feat: False
 search_hp: True
 # search_hp: False
 
-search_scale: [12, 5]
+search_scale: [50, 50]
 search_step: [200, 20]
 
 init_beta: 1
-init_alpha: 3
+init_alpha: 10
 
 
 # ------ Basic Config ------
-dataset: 'Caltech101'
+dataset: 'Flower102'
 shots: 16
 backbone: 'RN50'
 

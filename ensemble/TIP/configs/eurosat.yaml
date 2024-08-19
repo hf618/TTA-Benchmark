@@ -14,18 +14,18 @@ load_pre_feat: False
 search_hp: True
 # search_hp: False
 
-search_scale: [12, 5]
+search_scale: [12, 10]
 search_step: [200, 20]
 
 init_beta: 1
-init_alpha: 3
+init_alpha: 2
 
 
 # ------ Basic Config ------
-dataset: 'Caltech101'
+dataset: 'eurosat'
 shots: 16
 backbone: 'RN50'
 
 lr: 0.001
 augment_epoch: 10
-train_epoch: 20
+train_epoch: 100
