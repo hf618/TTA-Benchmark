@@ -4,8 +4,8 @@
 positive:
   enabled: True
   shot_capacity: 3
-  alpha: 5.0
-  beta: 5.0 
+  alpha: 2.363
+  beta: 7.45 
 
 # --- Negative Cache Configuration ---
 negative:
