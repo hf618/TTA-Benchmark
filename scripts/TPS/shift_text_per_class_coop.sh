@@ -13,4 +13,5 @@ python ./shift_classification.py ${data_root} --test_sets ${testsets} \
 --text_shift \
 --do_shift \
 --per_label \
---logname test_shift_text_per_class
+--with_coop \
+--logname test_shift_text_per_class_coop

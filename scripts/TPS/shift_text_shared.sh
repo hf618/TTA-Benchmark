@@ -12,5 +12,4 @@ python ./shift_classification.py ${data_root} --test_sets ${testsets} \
 --img_aug --lr $lr --tta_steps 1 \
 --text_shift \
 --do_shift \
---per_label \
---logname test_shift_text_per_class
+--logname test_shift_text_shared

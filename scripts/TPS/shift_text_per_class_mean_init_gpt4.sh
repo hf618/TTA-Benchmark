@@ -1,6 +1,6 @@
 #!/bin/bash
 
-data_root='/path/to/root'
+data_root='/root/autodl-tmp/dataset/tta_data'
 testsets=$1
 arch=ViT-B/16
 bs=64
@@ -13,4 +13,6 @@ python ./shift_classification.py ${data_root} --test_sets ${testsets} \
 --text_shift \
 --do_shift \
 --per_label \
---logname test_shift_text_per_class
+--with_concepts \
+--concept_type gpt4 \
+--logname test_shift_text_per_class_mean_init_gpt4
